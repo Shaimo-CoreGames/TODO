@@ -16,10 +16,11 @@ function App() {
 
   // Add Todo function
   const addTodo = async () => {
+
     if (!newTitle) return;
     try {
-      const response = await axios.post('http://127.0.0.1:8000/todos', { title: newTitle,completed: false});
-      setTodos([...todos, response.data]); 
+      const response = await axios.post('http://127.0.0.1:8000/todos', { title: newTitle, completed: false });
+      setTodos([...todos, response.data]);
       setNewTitle(""); // empties input field after adding a todo
     } catch (error) {
       console.error("Error adding todo:", error);
