@@ -1,4 +1,4 @@
-markdown_content = """# Task Master: Full-Stack Todo Application
+# Task Master: Full-Stack Todo Application
 
 A modern, full-stack Todo application built with a focus on speed, security, and persistence. This project was developed to master the integration between a React frontend and a FastAPI backend.
 
