@@ -4,8 +4,8 @@ import axios from 'axios'
 import { CheckCircle, Circle, Plus, Trash2 } from 'lucide-react'
 
 function App() {
-  const [todos, setTodos] = useState([])
-  const [newTitle, setNewTitle] = useState("") // Grouped hooks together
+  const [todos, setTodos] = useState([]) // State for our list of todos to display
+  const [newTitle, setNewTitle] = useState("") // Grouped hooks together 
 
   // Fetch Todos on load
   useEffect(() => {
